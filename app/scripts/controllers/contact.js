@@ -2,11 +2,12 @@
 
 /**
  * @ngdoc function
- * @name movieProjectApp.controller:MainCtrl
+ * @name movieProjectApp.controller:ContactCtrl
  * @description
- * # MainCtrl
+ * # ContactCtrl
  * Controller of the movieProjectApp
  */
 angular.module('movieProjectApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('ContactCtrl', function ($scope) {
+
   });
