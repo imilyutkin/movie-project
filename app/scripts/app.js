@@ -19,19 +19,23 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      .when('/popularmovies', {
+        templateUrl: 'views/movielist.html',
+        controller: 'PopularMoviesCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/toprated', {
+        templateUrl: 'views/movielist.html',
+        controller: 'TopRatedMoviesCtrl'
       })
-      .when('/contact', {
-        templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl'
+      .when('/nowplayingmovies', {
+        templateUrl: 'views/movielist.html',
+        controller: 'NowPlayingMoviesCtrl'
+      })
+      .when('/upcomingmovies', {
+        templateUrl: 'views/movielist.html',
+        controller: 'UpcomingMoviesCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/popularmovies'
       });
   });
