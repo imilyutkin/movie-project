@@ -1,83 +1,71 @@
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+/* Begin layout */
 
-body {
+html, body {
+  height: 100%;
+}
+div.row {
+  height: 100%;
+  margin: 0px;
+}
+div.row > div {
+  height: 100%;
+}
+#movieList,
+#navigation,
+#displayInfo {
   padding: 0;
 }
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+#movieList {
+  border-right: 1px solid #ddd;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
+/* End layout */
+
+/* Begin Navigation */
+#navigation {
+  background-color: rgb(37, 42, 58);
 }
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+#navigation h3 {
+  font-weight: bold;
+  color: rgb(75, 113, 151); 
+  padding-left: 15%;
+}
+#navigation .nav{
+  padding-left: 20%;
+}
+#navigation .nav a{
+  color: #FFF;
+  font-size: 18px;
+}
+#navigation .nav > li > a:hover,
+#navigation .nav > li > a:focus,
+#navigation .nav > li > a.selected {
+  border-radius: 0px;
+  background-color: rgb(55, 60, 90);
+}
+div.logo {
+  width: 30px;
+  margin: auto;
+  padding-top: 25px;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+/* End Navigation */
+
+/* Begin Movie List */
+
+.filters {
+  /*height: 117px;*/
+}
+.movieItems {
+  height: 100%;
+}
+.item {
+  height: 100px;
+  padding: 10px;
+}
+.item.selected {
+  background-color: #eee;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
+/* End Movie List */

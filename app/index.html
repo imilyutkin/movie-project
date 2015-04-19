@@ -21,43 +21,42 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
 
-            <a class="navbar-brand" href="#/">movieProject</a>
-          </div>
+<div class="row">
+  <div id="navigation" class="col-md-2">
+    <div class="logo">
+      <img src="images/logo.png" alt="">
+    </div>
+    <h3>Movies</h3>
+    <ul class="nav nav-pills nav-stacked">
+      <li><a class="selected" href="#">Popular</a></li>
+      <li><a href="#">Top Rated</a></li>
+      <li><a href="#">Now Playing</a></li>
+      <li><a href="#">Upcoming</a></li>
+    </ul>
+    <h3>Series</h3>
+    <ul class="nav nav-pills nav-stacked">
+      <li><a href="#">Popular</a></li>
+      <li><a href="#">Top Rated</a></li>
+      <li><a href="#">On The Air</a></li>
+    </ul>
+  </div>
+  <div id="movieList" class="col-md-4"> 
+    <div class="filters">
+    </div>
+    <div class="movieItems">
+      <div class="item">
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
 
-    <div class="container">
-      
-    <div ng-view=""></div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-    </div>
+  </div>
+  <div id=""displayInfo class="col-md-6"> 
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+    doloremque laudantium, totam rem aperiam.</p>
+  </div>
+</div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
