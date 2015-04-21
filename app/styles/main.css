@@ -17,6 +17,7 @@ div.row > div {
 }
 #movieList {
   border-right: 1px solid #ddd;
+  overflow-y: scroll;
 }
 
 /* End layout */
@@ -60,12 +61,23 @@ div.logo {
   height: 100%;
 }
 .item {
-  height: 100px;
-  padding: 10px;
+  padding: 15px 0px;
 }
+.item:hover,
 .item.selected {
   background-color: #eee;
 }
-
+.moviePoster {
+  width: 75%;
+}
+.releaseDate {
+  color: #999;
+  margin: 0;
+}
+.movieTitle {
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0px;
+}
 
 /* End Movie List */

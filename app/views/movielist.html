@@ -1,5 +1,12 @@
-<div ng-repeat="movie in movies">
-    <div>
-        {{movie.name}}
+<div class="item" ng-repeat="movie in movies">
+    <div class="row">
+      <div class="col-md-3">
+        <img class="moviePoster center-block" src="https://image.tmdb.org/t/p/w92{{movie.poster_path}}" alt="">
+      </div>
+      <div class="col-md-9">
+        <h5 class="releaseDate" ng-bind="movie.release_date"></h5>
+        <h4 class="movieTitle" ng-bind="movie.title"></h4>
+      </div>
     </div>
+    
 </div>
