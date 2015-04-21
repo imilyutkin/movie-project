@@ -23,7 +23,7 @@ angular
         templateUrl: 'views/movielist.html',
         controller: 'PopularMoviesCtrl'
       })
-      .when('/toprated', {
+      .when('/topratedmovies', {
         templateUrl: 'views/movielist.html',
         controller: 'TopRatedMoviesCtrl'
       })
