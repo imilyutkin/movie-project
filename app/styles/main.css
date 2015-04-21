@@ -62,6 +62,7 @@ div.logo {
 }
 .item {
   padding: 15px 0px;
+  cursor: pointer;
 }
 .item:hover,
 .item.selected {
