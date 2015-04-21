@@ -8,10 +8,9 @@
  * Controller of the movieProjectApp
  */
 angular.module('movieProjectApp')
-  .controller('UpcomingMoviesCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('UpcomingMoviesCtrl', ['$scope', 'MovieService', function ($scope, MovieService) {
+    var movies = MovieService.getUpcomingMovies();
+    movies.then(function(result) {
+        $scope.movies = result;
+    });
+  }]);

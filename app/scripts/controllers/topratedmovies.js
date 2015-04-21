@@ -8,13 +8,9 @@
  * Controller of the movieProjectApp
  */
 angular.module('movieProjectApp')
-  .controller('TopRatedMoviesCtrl', function ($scope) {
-    $scope.movies = [
-        {
-            "name": "top rated"
-        },
-        {
-            "name": "hello"
-        }
-    ];
-  });
+  .controller('TopRatedMoviesCtrl', ['$scope', 'MovieService', function ($scope, MovieService) {
+    var movies = MovieService.getTopRatedMovies();
+    movies.then(function(result) {
+        $scope.movies = result;
+    });
+  }]);
